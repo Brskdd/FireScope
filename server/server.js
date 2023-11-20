@@ -8,7 +8,7 @@ function randtherandvar() {
 const runtherandtherandvar = setInterval(randtherandvar,100);
 
 app.get("/api", (req,res) => {
-    res.send(200)
+    res.send(randvar.toString())
 })
 
 app.listen(5000, () => {
